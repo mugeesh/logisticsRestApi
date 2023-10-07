@@ -1,0 +1,6 @@
+#bin/bash
+echo Starting to docker compose...
+docker-compose pull
+docker-compose build --no-cache
+docker-compose up --build -d
+echo Application Started...

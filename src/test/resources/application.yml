@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:mysqldb}:3306/logisticsDB
+    password: root
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+google:
+  maps:
+    api-key: REPLACE_MAP_KEY
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
