@@ -28,7 +28,7 @@ public class GoogleMapService {
             Thread.currentThread().interrupt();
             log.error("error checking lat & lon valida", e);
             log.error("error while getting distance", e);
-            throw new MapException("Internal error please contact to company");
+            throw new MapException("Internal error on Google Maps, please contact the company");
         }
     }
 
@@ -48,7 +48,7 @@ public class GoogleMapService {
         } catch (Exception e) {
             Thread.currentThread().interrupt();
             log.error("error while getting distance", e);
-            throw new NotFoundException("Internal error please contact to company");
+            throw new NotFoundException("Internal error on Google Maps, please contact the company");
         }
         return distance;
     }

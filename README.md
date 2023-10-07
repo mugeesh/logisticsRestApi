@@ -13,7 +13,7 @@ I have used these technologies to create Rest API.
   * then
 * ```` sh start.sh ````
 * Application Started...
-* then open your browser use this link
+* then open your browser use this URL
 * http://localhost:8080/swagger-ui/index.html
 #### OR
 * use Postman/RestClient
@@ -39,7 +39,7 @@ response body : {"status": "TAKEN"}
 ![swagger.png](swagger.png)
 
 ### Integration Test
-* To run the integration test, you must need java17 in your machine
+* To run the integration test, you must need java17 in your machine(I am using mysql test container for test)
 * then run this command
 ````
  ./mvnw test -Ptest
